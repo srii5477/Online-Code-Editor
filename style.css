@@ -64,4 +64,8 @@ label{
     .result.open{
         grid-column:span 1;
     }
+    .one,.two,.three,.four,button{
+    height:20px;
+    width:30px;
+    }
 }
