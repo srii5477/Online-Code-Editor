@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~~ Online HTML,CSS & JS Code Editor ~~</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Code Editor for the Big 3 - HTML, CSS & JS</h1>
+    <div class="headings">
+            <div class="one">
+                <button type="button">HTML</button>
+            </div>
+            <div class="two">
+                <button type="button">CSS</button>
+            </div>
+            <div class="three">
+                <button type="button">JS</button>
+            </div>
+            <div class="four">
+                <button type="button">Result</button>
+            </div>
+            <div class="flexrun">
+                <button class="run" type="button">Run</button>
+            </div>
+        
+    </div>
+    <div class="container">
+        <div class="html">
+            <label for="html" style="color:white"></label>
+            <textarea id="html" name="html" rows="20" cols="35" spellcheck="false"><!--HTML Boilerplate-> <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Output</title>
+                </head>
+                <body>
+                </body>
+                </html>--></textarea>
+        </div>
+        <div class="css">
+            <label for="css" style="color:white"></label>
+            <textarea id="css" name="css" rows="20" cols="35" spellcheck="false">/*bg color defaults to black*/ body{background-color:white;}</textarea>
+        </div>
+        <div class="js">
+            <label for="js" style="color:white"></label>
+            <textarea id="js" name="js" rows="20" cols="35" spellcheck="false">alert("Hello world!");</textarea>
+        </div>
+        <div class="result">
+            <iframe id="window" src="./sampleoutput.html" height="60%" width="100%" title="Result Window"></iframe> 
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
