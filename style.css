@@ -1,0 +1,124 @@
+body{
+    background-color:rgb(245, 235, 212);
+    margin-top: 8%;
+}
+.big-title{
+    color:rgb(92, 69, 5);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:center;
+}
+.margin-centered{
+    margin-left:10%;
+}
+/*add responsiveness*/
+.container{
+    margin-left:0.5%;
+    display:grid;
+    gap:15px;
+    grid-template-rows:1fr 2fr;
+    grid-template-columns:1fr 1fr 1fr;
+    height:40%;
+}
+.headings{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:10vh;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+.one,.two,.three,.four{
+    height:40px;
+    width:60px;
+    background-color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button {
+    height:40px;
+    width:60px;
+    font-size: 20px;
+}
+.run{
+    align-self:flex-end;
+    color:white;
+    background-color:rgb(17, 109, 78);
+}
+label{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.html, .css, .js, .result{
+    display:none;
+}
+.html.open, .css.open, .js.open, .result.open{
+    display:grid;
+    grid-template-columns:1fr;
+	grid-template-rows:1fr;
+	gap:0;
+    
+
+}
+.html.open, .css.open, .js.open {
+    border:1px solid rgb(82, 64, 0);
+}
+.html.open pre,
+.html.open textarea,
+.css.open pre,
+.css.open textarea, 
+.js.open pre,
+.js.open textarea {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+
+
+textarea {
+    background-color: transparent;
+    color: transparent;
+	border: none;
+	caret-color: #000;
+	/* overflow: auto; */
+    padding-top: 3%;
+    padding-left: 4.6%;
+    font-family: monospace;
+    font-size: 15px;
+
+}
+
+button {
+    background-color:  rgb(245, 235, 212) !important;
+    border:rgb(82, 64, 0) !important;
+    color: rgb(87, 62, 4);
+}
+.result.open{
+    grid-column:span 3;
+}
+
+textarea {
+    margin-top: 2%;
+}
+
+textarea, pre {
+    line-height: 2.0;
+    margin: 0 !important;
+}
+
+@media(max-width:500px){
+    .container{
+        margin-left:0.5%;
+        display:grid;
+        gap:10px;
+        grid-template-rows:1fr 1fr 1fr 3fr;
+        grid-template-columns:1fr;
+        height:40%;
+    }
+    .result.open{
+        grid-column:span 1;
+    }
+    .one,.two,.three,.four,button{
+        height:40px;
+        width:55px;
+        font-size:12px;
+    }
+}
